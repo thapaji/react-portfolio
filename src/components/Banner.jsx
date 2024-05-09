@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/headshot.png";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
+import sujanCv from "../assets/sujan_cv.pdf";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
+import "animate.css";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -79,9 +80,11 @@ export const Banner = () => {
                     challenges and deliver impactful solutions in the ever-evolving landscape of
                     software development.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <a href={sujanCv} download={true}>
+                    <button onClick={() => console.log("connect")}>
+                      Download my CV <FaCloudDownloadAlt size={25} />
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>

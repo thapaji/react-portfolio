@@ -54,10 +54,11 @@ export const Projects = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen
-                    book.
+                    Welcome to my projects! Here, you'll see a collection of my different projects,
+                    each show casing my dedication and skills. From newbie in MERN Stack development
+                    to Confident web developer, I've gained a lot of experience. It's all about
+                    facing challenges with creativity and accuracy. Take a look around and see the
+                    result of my passion and hard work!
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -66,14 +67,16 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">MERN STACK</Nav.Link>
                       </Nav.Item>
+
+                      {/* Tabs for future
                       <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
