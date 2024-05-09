@@ -1,12 +1,13 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import portfolio from "../assets/img/Portfolio.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import bucketList from "../assets/img/bucket-list.png";
+import weatherApp from "../assets/img/weather-app.png";
+import ntdl from "../assets/img/ntdl.png";
+import jobSafari from "../assets/img/job-safari.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
-
 
 export const Projects = () => {
   const projects = [
@@ -18,28 +19,28 @@ export const Projects = () => {
     {
       title: "Transaction Recorder",
       description: "Record The Day To Day Transactions",
-      imgUrl: projImg2,
+      imgUrl: bucketList,
     },
     {
       title: "Bucket List",
       description:
         "Do you have something you want to do? Record it here tick when its done. Track you list anytime anywhere.",
-      imgUrl: projImg3,
+      imgUrl: bucketList,
     },
     {
       title: "ProductivityPilot",
       description: "Track what to do and what is killing your time.",
-      imgUrl: portfolio,
+      imgUrl: ntdl,
     },
     {
       title: "Weather App",
       description: "View the weather of any city.",
-      imgUrl: projImg2,
+      imgUrl: weatherApp,
     },
     {
       title: "Job Safari",
       description: "Embark on a journey to discover new career adventures.",
-      imgUrl: projImg3,
+      imgUrl: jobSafari,
     },
   ];
 
