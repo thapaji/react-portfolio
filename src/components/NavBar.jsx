@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-// import logo from "../assets/img/logo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -34,7 +32,6 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            {/* <img src={logo} alt="Logo" /> */}
             <h2>Sujan Thapa</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -66,19 +63,16 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
-                  <img src={navIcon1} alt="" />
+                <a href="https://www.linkedin.com/in/sujan-bikram-thapa/" target="_blank">
+                  <FaLinkedin />
                 </a>
-                <a href="#">
-                  <img src={navIcon2} alt="" />
-                </a>
-                <a href="#">
-                  <img src={navIcon3} alt="" />
+                <a href="https://github.com/thapaji" target="_blank">
+                  <FaGithub />
                 </a>
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Let’s Connect</span>
+                  <span>Reach Out</span>
                 </button>
               </HashLink>
             </span>

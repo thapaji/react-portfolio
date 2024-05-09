@@ -130,8 +130,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 
-.navbar h2{
-  color:#fff;
+.navbar h2 {
+  color: #fff;
 }
 span.navbar-text {
   display: flex;
@@ -166,12 +166,13 @@ span.navbar-text {
 .social-icon a:hover::before {
   transform: scale(1);
 }
-.social-icon a img {
-  width: 40%;
+.social-icon a svg {
+  font-size: 1.8rem;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover svg {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg)
     brightness(95%) contrast(86%);
 }
@@ -258,9 +259,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner  ************/
 
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  /* background-image: url("./assets/img/banner-bg.png"); */
+  margin-bottom: 2rem;
+  /* padding: 260px 0 100px 0; */
+  padding: 7.5rem;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -313,6 +314,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  width: 60%;
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -326,6 +328,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(-20px);
   }
 }
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -333,7 +336,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills  ************/
 
 .skill {
-  padding: 0 0 50px 0;
+  padding: 80px 0 0 0;
   position: relative;
 }
 .skill-bx {
@@ -583,8 +586,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer  ************/
 
 .footer {
-  padding: 0 0 50px 0;
-  background-image: url("./assets/img/footer-bg.png");
+  padding: 4rem;
+  background: #151515;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

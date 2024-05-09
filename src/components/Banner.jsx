@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/headshot.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -68,10 +68,16 @@ export const Banner = () => {
                     {`Developer`}
                   </h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen
-                    book.
+                    I'm a results-driven Software Developer based in Sydney, Australia, with a
+                    passion for crafting robust solutions and embracing cutting-edge technologies.
+                    With a Master's degree in Applied Information Technology and hands-on experience
+                    in Java, .NET, JavaScript, and more, I thrive in dynamic environments where
+                    innovation meets practicality. From optimizing software performance to
+                    spearheading migration projects and contributing to enterprise-level
+                    applications, I bring a versatile skill set honed through years of dedication
+                    and continuous learning. Explore my portfolio to discover how I tackle
+                    challenges and deliver impactful solutions in the ever-evolving landscape of
+                    software development.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />

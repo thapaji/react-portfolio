@@ -1,32 +1,31 @@
 import { Container, Row, Col } from "react-bootstrap";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          {/* <MailchimpForm /> */}
-          mailto me
-          <Col size={12} sm={6}>
-            {/* <img src={logo} alt="Logo" /> */}
-            img
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+          <Col className="text-center">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="Icon" />
+              <a href="https://www.linkedin.com/in/sujan-bikram-thapa/" target="_blank">
+                <FaLinkedin />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="Icon" />
+              <a href="https://github.com/thapaji" target="_blank">
+                <FaGithub />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="Icon" />
+              <a href="mailto:mail.thapasujan@gmail.com">
+                <FaEnvelope />
               </a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center">
+            {" "}
+            <p>&copy; Copyright 2024. All Rights Reserved <a href="#">&copy;Sujan</a></p>
           </Col>
         </Row>
       </Container>
