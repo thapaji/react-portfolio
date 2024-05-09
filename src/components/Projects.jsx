@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+import portfolio from "../assets/img/Portfolio.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -13,7 +13,7 @@ export const Projects = () => {
     {
       title: "Portfolio",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: portfolio,
     },
     {
       title: "Transaction Recorder",
@@ -29,7 +29,7 @@ export const Projects = () => {
     {
       title: "ProductivityPilot",
       description: "Track what to do and what is killing your time.",
-      imgUrl: projImg1,
+      imgUrl: portfolio,
     },
     {
       title: "Weather App",

@@ -1,12 +1,6 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
+import { Marquee } from "./Marquee";
 
 export const Skills = () => {
   const responsive = {
@@ -35,32 +29,11 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>
+              {/* <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br>{" "}
                 Lorem Ipsum has been the industry's standard dummy text.
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <FaHtml5 />
-                  <h5>HTML 5</h5>
-                </div>
-                <div className="item">
-                  <FaCss3 />
-                  <h5>CSS 3</h5>
-                </div>
-                <div className="item">
-                  <FaJs />
-                  <h5>Logo Design</h5>
-                </div>
-                <div className="item">
-                  {/* <img src={meter1} alt="Image" /> */}
-                  <h5>Web Development</h5>
-                </div>
-              </Carousel>
+              </p> */}
+              <Marquee />
             </div>
           </div>
         </div>
